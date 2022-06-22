@@ -1,0 +1,68 @@
+
+.ouutaContaina2{
+    margin-top: 100px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between; 
+    margin-left: 163px;
+    margin-right: 163px;
+    /* border: 2px solid blue; */
+    height: 28vh;
+    /* padding: 30px 30px; */
+}
+.leftcon{
+    margin-top: 450 px;
+    height: 100%;
+    width: 60%;
+    /* border: 2px solid navy; */
+    /* padding: 100px 100px; */
+}
+.leftcon img{
+    height: 100%;
+    width: 100%;
+}
+.rightcon{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid indianred ; */
+}
+.rightcon1{
+    width: 75%;
+    height: 20%;
+    /* border: 2px solid red ; */
+   font-size: large;
+   font-weight:bolder;
+   margin-top: 25px;
+}
+.rightcon2{
+    /* margin-bottom: 25px; */
+    width: 65%;
+    height: 20%;
+    /* border: 2px solid red ; */
+}
+.rightcon3{
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+    width: 65%;
+    height: 20%;
+    /* border: 2px solid red ; */
+}
+.nomore{
+    padding: 11px 43px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: medium;
+    color: white;
+    background-color: orangered;
+    border: 2px solid orangered ;
+    border-radius: 5px;
+    
+}
+.nomore:hover{
+        color: orangered;
+        background-color: white;
+}

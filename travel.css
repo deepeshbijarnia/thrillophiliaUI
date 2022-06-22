@@ -1,0 +1,185 @@
+.ouutaContaina{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:1120px;
+    margin-left: 163px;
+    margin-right: 163px;
+    border: 2px solid gray;
+    height: 82vh;
+}
+.part1{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    border: 2px solid yellow;
+}
+.part2{
+    display: flex;
+    width: 100%;
+    height: 3%;
+    justify-content: center;
+    margin-top: 30px;
+    border: 2px solid orangered;
+
+}
+.part3{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    border: 2px solid palevioletred;
+
+}
+.part4{
+    display: flex;
+    height: 14%;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 2px solid violet; */
+}
+.left3{
+   width: 45%;
+   height:100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-left: 38px;
+   border: 2px solid violet;
+}
+.right3{
+    width: 50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-right: 19px;
+    border: 2px solid violet;
+}
+.cards3{
+    width: 100%;
+    height: 19%;
+    display: flex;
+    justify-content: space-between;
+}
+.cardsleft3{
+    height: 100%;
+    width: 22%;
+
+}
+.cardsleft3 img{
+    width: 100%;
+    height: 100%;
+}
+.cardsright31{
+   width: 76%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.cardrightupper31{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    word-wrap: break-word;
+}
+/* .cardrightmid31{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+} */
+
+.cardrightlower31{
+    width: 100%;
+   height: 30%;
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+}
+.rightupper3{
+    width: 100%;
+    height: 65%;
+  
+}
+.rightupper3 img{
+    width: 100%;
+    height: 100%;
+}
+.rightmid3{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.rightlower3{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.news:hover{
+    color: orangered;
+}
+/* .part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:orangered;
+} */
+
+
+.ouutaContaina2{
+    margin-top: 450 px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    width:79%;
+    margin-left: 128px;
+    border: 2px solid gray;
+    height: 42vh;
+}
+.leftcon{
+    height: 100%;
+    width: 65%;
+    border: 2px solid yellow;
+}
+.leftcon img{
+    height: 100%;
+    width: 100%;
+}
+.rightcon{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.rightcon1{
+    width: 75%;
+    height: 20%;
+    border: 2px solid red ;
+}
+.rightcon2{
+    margin-top: 10px;
+    width: 65%;
+    height: 20%;
+    border: 2px solid red ;
+}
+.rightcon3{
+    margin-top: 20px;
+    width: 65%;
+    height: 20%;
+    border: 2px solid red ;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function populate(s1,s2)
+        {
+            var s1=document.getElementById(s1);
+            var s2=document.getElementById(s2);
+            s2.innerHTML="";
+            if(s1.value == "Himachal Pradesh")
+            {
+                var optionArray= ["|","KheerGanga Trek|kheerganga","Triund_Trek|triund trek","Spiti Trek|spiti trek"]
+
+            }
+            else if(s1.value == "Uttarakhand")
+            
+            {
+                var optionArray= ["|","mussorie|Mussorie","Chopta|chopta","rishikesh|Rishikesh"]
+
+            }
+            else if(s1.value == "Kashmir")
+            {
+                var optionArray= ["|","leh|LEH","ladakh|LADAKH","gulmarg|GULMARG"]
+            }
+            
+            for(var option in optionArray)
+            {
+                var pair= optionArray[option].split("|");
+                var newoption = document.createElement("option");
+                newoption.value=pair[0];
+                newoption.innerHTML=pair[1];
+                s2.options.add(newoption);
+                console.log(s2.options);
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down </title>
+    
+    <!-- <select name="select2" id="select2" class="">
+
+    </select> -->
+</head>
+<body>
+    <div class="outercontainer">
+        <div class="outerUpper">
+                <b> Winter Treks </b>
+        </div>
+        <div class="outerlower">
+            <select id="select1" name="select1" onchange="populate(this.id,'slct2')">
+                <option value="">-select-</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="Kashmir">Kashmir</option>   
+            </select>
+            <select name="select2" id="slct2">
+
+            </select>
+
+            
+        </div>
+            
+       
+    </div> 
+</body>
+</html>

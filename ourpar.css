@@ -1,0 +1,90 @@
+.otcont{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-left: 163px;
+    margin-right: 163px;
+    /* border: 2px solid blue; */
+    height: 63vh;
+}
+.otcont1{
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.otcont2{
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid palegreen; */
+    display: flex;
+    justify-content: center;
+}
+.partners{
+    height: 100%;
+    width: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.partners img{
+    height: 33%;
+    width: 45%;
+}
+.otcont11{
+    font-family: sans-serif;
+    letter-spacing: normal;
+    font-weight: normal;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 40%;
+     /* border: 1px solid lawngreen; */
+}
+.otcont12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid lawngreen; */
+}
+.orline{
+    /* margin-top: 10px; */
+    background-color: orangered;
+    width: 7%;
+    height: 1%;
+    border: 1.5px solid orangered;
+    border-radius: 10px;
+}
+.otcont13{
+    font-family: sans-serif;
+    letter-spacing: normal;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid lawngreen; */
+}
+.icons{
+    width: 70%;
+    height: 35%;
+}
+.icons img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+}
+.icons img:hover{
+    color: gray;
+    filter: grayscale(0);
+}
+

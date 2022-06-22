@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./paradise.css">
+    <link rel="stylesheet" type="text/css" href="./destinations.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+            overflow-x: hidden;
+
+        }
+
+        .page1body {
+            background-image: url('./assets/images/heroBg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            height: 100vh;
+        }
+
+        /* body {
+            background-image: url('./assets/images/heroBg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        } */
+
+        .divOuter {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        hr.tophr {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .divInner1,
+        .divInner2,
+        .divInner3 {
+            float: left;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        .divInner2 input[type=text] {
+            background-color: rgba(0, 0, 0, 0);
+            float: right;
+            padding: 6px;
+            border: none;
+            font-size: 17px;
+            display: block;
+            padding: 9px 4px 9px 40px;
+            background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+        }
+
+        .box input[type=text] {
+
+            background-color: white;
+            float: right;
+            padding: 6px;
+            border: white;
+            font-size: 17px;
+            display: flex;
+            justify-content: space-around;
+            padding: 9px 4px 9px 40px;
+            margin: 7;
+            text-align: center;
+
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .divInner3 {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .changingtext1 {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            font-family: verdana;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .changingtext2 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            font-family: verdana;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .divInner3 button {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            float: right;
+            border: none;
+            font-size: 15px;
+        }
+
+        .div-outer5 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .div-outer5 button:hover {
+            background-color: orangered;
+            height: 102%;
+        }
+
+        .div-outer5 button {
+            /* display: flex;  */
+            justify-content: center;
+            background-color: gray;
+            border: 2px solid gray;
+            color: white;
+            padding: 16px 16px;
+            text-align: center;
+            text-decoration: none;
+            /* display: flex;  */
+            font-size: 16px;
+            margin: 3px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .div-outer6 button {
+            /* display: flex;  */
+            /* justify-content: center;    */
+            background-color: transparent;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 16px;
+            /* margin-left: 130px; */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .uppersec {
+            display: flex;
+            justify-content: center;
+        }
+
+        .div-outer6 {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .div-outer6 button:hover {
+            font-weight: bold;
+        }
+
+        .nextsection {
+            display: flex;
+            border: 2px slateblue;
+            height: 80vh;
+            justify-content: space-around;
+        }
+
+        .nextsec1 {
+            border: rgba(0, 0, 0, 0);
+            margin: 70px 30px;
+
+
+        }
+
+        .nextsec1 img {
+            border-radius: 15px;
+        }
+
+        .nextsec1 img:hover {
+            width: 105%;
+            height: 105%;
+            border-radius: 30px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .yoda {
+            color: black;
+            margin-top: 130px;
+        }
+
+        .byoda {
+            /* margin-top: 80px; */
+            color: gray;
+        }
+
+        .nextsec2 {
+
+            display: flex;
+            height: 60vh;
+            width: 85%;
+            margin-top: 0px;
+            margin-left: 95px;
+            border-color: black;
+            justify-content: space-between;
+        }
+
+        .nextsec21 {
+            background-image: url('./assets/images/jiasun.jpg');
+            background-repeat: no-repeat;
+            width: 60%;
+        }
+
+        /* .:hover{
+            height: 80%;
+            width: 80%;
+        } */
+        .nextsec5 {
+            height: 80vh;
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 65px;
+        }
+
+        .uppersec {
+            padding-top: 20px;
+            height: 17%;
+            width: 100%;
+            /* padding-bottom: 500 px; */
+        }
+
+        .lowersec {
+            display: flex;
+            /* padding: 0 50px 0 50px; */
+            margin: 0 60px 0 60px;
+            justify-content: space-between;
+            height: 83%;
+            /* width: 100%; */
+            /* overflow-x: auto; */
+        }
+
+        .backimage {
+            background-image: url('./assets/images/lanka02.jpg');
+            /* max-width: 100%; */
+            background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+            position: relative;
+            height: 70%;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        .orangehover:hover {
+            color: orangered;
+        }
+
+        .cards {
+            /* margin: 0 auto; */
+            /* background-color: green;  */
+            /* border-radius: 15px; */
+            width: 20%
+        }
+
+        .yellow-color {
+            color: rgb(255, 145, 0);
+        }
+
+        .cardslower {
+            color: black;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .empdiv {
+            height: 4%;
+        }
+
+        .backimage2 {
+            background-image: url('./assets/images/Maldives.jpg');
+            /* max-width: 100%; */
+            background-size: cover;
+            background-position: center;
+            height: 70%;
+            border-radius: 30px;
+            position: relative;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+        }
+
+        .backimage3 {
+            background-image: url('./assets/images/Rajasthan.jpg');
+            /* max-width: 100%; */
+            background-size: cover;
+            background-position: center;
+            height: 70%;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .backimage4 {
+            background-image: url('./assets/images/him01.jpg');
+            /* max-width: 100%; */
+            background-size: cover;
+            background-position: center;
+            height: 70%;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .backimage:hover,
+        .backimage2:hover,
+        .backimage3:hover,
+        .backimage4:hover {
+            border-radius: 50px;
+        }
+
+        .block21:hover,
+        .block22:hover,
+        .block31:hover,
+        .block32:hover,
+        .block33:hover,
+        .block41:hover,
+        .block42:hover,
+        .block43:hover {
+            border-radius: 0px;
+        }
+
+        .block1 {
+            background-image: url('./assets/images/Rajasthan.jpg');
+            width: 55%;
+            border-radius: 30px;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+            /* margin: 0 0; */
+        }
+
+        .block2,
+        .block3,
+        .block4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 12%;
+            height: 100%;
+        }
+
+        .jet {
+            color: gray;
+            font-size: medium;
+        }
+
+        .orangehover {
+            font-size: x-large;
+        }
+
+        .block21 {
+            background-image: url('./assets/images/50.jpg');
+            height: 48%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        .block22 {
+            background-image: url('./assets/images/Dubai.jpg');
+            height: 48%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        .block31 {
+            background-image: url('./assets/images/Sikkim.jpg');
+            height: 30%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        .block32 {
+            background-image: url('./assets/images/raj03.jpg');
+            height: 30%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        .block33 {
+            background-image: url('./assets/images/him03.jpg');
+            height: 30%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        .block41 {
+            background-image: url('./assets/images/him05.jpg');
+            height: 32%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+              /* width: 100%;  */
+            /* overflow-x: auto; */
+        }
+
+        .block42 {
+            background-image: url('./assets/images/lanka03.jpeg');
+            height: 32%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        .block43 {
+            background-image: url('./assets/images/vaporwave-wallpaper-2560x1440.jpg');
+            height: 32%;
+            border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+
+        }
+
+        /* .imgSliderC{
+
+            width: 80%;
+            height: 350px;
+
+        } */
+
+        .imgCointainer {
+            width: 59%;
+            margin: 100px auto;
+            border: 5px solid black;
+            overflow: hidden;
+        }
+
+        .imgSlider {
+            display: flex;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page1body">
+        <div class='divOuter'>
+            <div class='divInner1'>
+                <img src="./assets/images/thrillophiliaLogo.png" , height="30">
+            </div>
+            <div class='divInner2'>
+                <form>
+                    <input type="text" placeholder="Search Destinations, Tours, Activities" , size="50">
+                </form>
+            </div>
+            <div class='divInner3'>
+                <button class="giftcard"><i class="fa fa-gift"></i> Gift an Experience</button>
+                <button class="login" onclick="console.log('hello world')">Login</button>
+            </div>
+
+        </div>
+        <hr class="tophr">
+
+        <div class="changingtext1">
+            <h3>
+                It's Time for new
+            </h3>
+        </div>
+
+
+        <div class="changingtext2">
+            <marquee direction = "up">ESCAPES</marquee>
+            <marquee direction = "up">THRILLS</marquee>
+        </div>
+
+        <div class='div-outer5'>
+            <button><i class="fa fa-gift"></i> Activity</button>
+            <button> <i class="fa-solid fa-mountain"></i>Tours</button>
+            <button><i class="fa fa-bicycle"></i> Rental</button>
+            <button><i class="fa fa-hotel"></i> Staycation</button>
+        </div>
+
+
+        <div class="box">
+            <form>
+                <input type="text" placeholder="Search Destinations, Tours, Activities" , size="100" <>
+            </form>
+        </div>
+        <div class="div-outer6">
+            <button><i class="fa fa-gift"></i> 24,000+<br> Experiences</button>
+            <button><i class="fa fa-globe"></i> 55+<br> Countries</button>
+
+            <!-- <button > <i class="fa fa-globe">55+<br>Countries</i></button> -->
+            <button><i class="fa fa-bicycle"></i> Best price<br>GUARANTEED</button>
+            <button><i class="fa fa-hotel"></i> 84 Million+<br>USER PER YEAR</button>
+        </div>
+        <br><br><br>
+
+
+
+    </div>
+    <div class="nextsection">
+        <div class="nextsec1">
+            <h1 class="yoda"> Find The Perfect <br> Escape</h1>
+            <h3 class="byoda">Discover your ideal experience</h3>
+        </div>
+        <div class="nextsec1">
+            <img src="./assets/images/tour1.jpg" alt="error loading image">
+        </div>
+        <div class="nextsec1">
+            <img src="./assets/images/tour2.jpg" alt="error loading image">
+        </div>
+        <div class="nextsec1">
+            <img src="./assets/images/tour3.jpg" alt="error loading image">
+        </div>
+    </div>
+    <!-- 
+    <div class="nextsec2">
+        <div class="nextsec21">
+            <h4 class="yel">UPTO</h4><br>
+            <h1 class="white">50% OFF<br></h1>HOLIDAY PACKAGES</h1>
+        </div>
+        <div class="nextsec22">
+
+        </div>
+    </div> -->
+    <div class="nextsec2">
+        <div class='block1'>
+        </div>
+        <div class='block2'>
+            <div class="block21">
+
+            </div>
+            <div class="block22">
+
+            </div>
+
+        </div>
+        <div class='block3'>
+            <div class="block31">
+
+            </div>
+            <div class="block32">
+
+            </div>
+            <div class="block33">
+
+            </div>
+        </div>
+        <div class='block4'>
+            <div class="block41">
+
+            </div>
+            <div class="block42">
+
+            </div>
+            <div class="block43">
+
+            </div>
+        </div>
+    </div>
+    <div class=nextsec5>
+        <div class=uppersec>
+            <h1>Best Of Maldives </h1>
+        </div>
+        <div class="empdiv">
+
+        </div>
+        <div class="lowersec">
+
+            <div class="cards">
+                <div class="backimage2">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage2">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="backimage2">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage2">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class=nextsec5>
+        <div class=uppersec>
+            <h1>Best Of Goa </h1>
+        </div>
+        <div class="empdiv">
+
+        </div>
+        <div class="lowersec">
+
+            <div class="cards">
+                <!-- style="position: relative;" -->
+                <div class="backimage">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Morzim 5D/6N
+                    </p>
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Clube Tennis<br>Morzim Beach</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Anjuna 7D/8N
+                    </p>
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">La padio<br>Anjuna Beach</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>8,500 </span><span
+                        class='priceearlier'><s>16,799</s></span>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="backimage">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Bagha 7D/8N
+                    </p>
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Bagha <br>Beach</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.5 (338 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Seikerim
+                        3D/4N</p>
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class=nextsec5>
+        <div class=uppersec>
+            <h1>Best Of Rajasthan </h1>
+        </div>
+        <div class="empdiv">
+
+        </div>
+        <div class="lowersec">
+
+            <div class="cards">
+                <div class="backimage3">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage3">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="backimage3">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage3">
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class=nextsec5>
+        <div class=uppersec>
+            <h1>Himalayan Treks </h1>
+        </div>
+        <div class="empdiv">
+
+        </div>
+        <div class="lowersec">
+
+            <div class="cards">
+                <!-- style="position: relative;" -->
+                <div class="backimage4">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Morzim 5D/6N
+                    </p>
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Clube Tennis<br>Morzim Beach</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage4">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Anjuna 7D/8N
+                    </p>
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">La padio<br>Anjuna Beach</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>8,500 </span><span
+                        class='priceearlier'><s>16,799</s></span>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="backimage4">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Bagha 7D/8N
+                    </p>
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Bagha <br>Beach</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.5 (338 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="backimage4">
+                    <p style="position: absolute; bottom: 0; left: 15px;"> <i class="fa fa-map-marker"></i> Seikerim
+                        3D/4N</p>
+                    <!-- <img src="./assets/images/tour1.jpg" alt="error loading image"><br> -->
+                </div>
+                <div class="cardslower">
+                    <p class="orangehover">Garden of dreams <br>Pushkar By Barsingha</p>
+                    <p class="jet"><i class='fa fa-star yellow-color'></i> 4.0 (238 reviews)</p>
+                    <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span><span
+                        class='priceearlier'><s>10,799</s></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div style="width: 800px; height: 350px;">
+        <!-- <div class="imgSliderC"> -->
+        <div class="imgCointainer">
+            <div class="imgSlider">
+                <img src="./assets/imgCal04.jpg" id="lastone" alt="slider image" />
+                <img src="./assets/imgCal01.jpg" alt="slider image" />
+                <img src="./assets/imgCal02.jpg" alt="slider image" />
+                <img src="./assets/imgCal03.jpg" alt="slider image" />
+                <img src="./assets/imgCal04.jpg" alt="slider image" />
+                <img src="./assets/imgCal01.jpg" id="firstone" alt="slider image" />
+            </div>
+        </div>
+        <!-- </div> -->
+        <div id="preBtn">
+            Previous
+        </div>
+        <div id="nxtBtn">
+            Next
+        </div>
+
+    </div>
+    <!-- <body onload="whenpageLoads()">
+        <div class="bigContainer">
+            <div class="upper">
+                <h1>Destinations Near You</h1>
+            </div>
+            <div class="mid">
+                <button type="button" class="clickbuttons" onclick="bangloretabclicked()">Bangalore</button>
+                <button type="button" class="clickbuttons" onclick="punetabclicked()">Pune</button>
+                <button type="button" class="clickbuttons" onclick="delhitabclicked()">Delhi</button>
+                <button type="button" class="clickbuttons" onclick="jaipurtabclicked()">Jaipur</button>
+                <button type="button" class="clickbuttons" onclick="mumbaitabclicked()">Mumbai</button>
+                <button type="button" class="clickbuttons" onclick="chandighartabclicked()">Chandigarh</button>
+                <button type="button" class="clickbuttons" onclick="chennaitabclicked()">Chennai</button>
+            </div>
+            <div id="bangloretab">
+                <div class="banglolower">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/tour1.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>wayanand</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>2300 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/tour2.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>chikmaglaur</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/tour3.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>1900</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/Sikkim.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Ooty</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>1100 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bangloupper">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/Rajasthan.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Munnar</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>3300</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/Maldives.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Kabini</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>4500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/lanka02.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Mysore</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>1900 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv1">
+                        <button class="viewall"> View All</button>
+                    </div>
+                </div>
+            </div>
+            <div id="punetab">
+                <div class="banglolower">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/Dubai.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Goa</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/him01.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>PondiCherry</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>2100 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/him03.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Mahabaleshwar</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7700 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/him05.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Lonavala</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>2400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bangloupper">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/50.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Alibaugh</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>3300 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/raj03.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Karjat</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>6600</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+                            <img src="./assets/images/jiasun.jpg" alt="error loading image">
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Igatpuri</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>5500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv1">
+                        <button class="viewall"> View All</button>
+                    </div>
+                </div>
+            </div>
+            <div id="delhitab">
+                <div class="banglolower">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Manali</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>8500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Shimla</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>3500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Rishikesh</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>1500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Dharamshala</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>9500 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bangloupper">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Nainitaal</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>2500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Corbett</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>2600 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>agra</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>6600 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv1">
+                        <button class="viewall"> View All</button>
+                    </div>
+                </div>
+            </div>
+            <div id="mumbaitab">
+                <div class="banglolower">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bangloupper">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv1">
+                        <button class="viewall"> View All</button>
+                    </div>
+                </div>
+            </div>
+            <div id="jaipurtab">
+                <div class="banglolower">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bangloupper">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv1">
+                        <button class="viewall"> View All</button>
+                    </div>
+                </div>
+            </div>
+            <div id="chandighartab">
+                <div class="banglolower">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bangloupper">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv1">
+                        <button class="viewall"> View All</button>
+                    </div>
+                </div>
+            </div>
+            <div id="chennaitab">
+                <div class="banglolower">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bangloupper">
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv">
+                        <div class="cardsleft">
+    
+                        </div>
+                        <div class="cardsright">
+                            <div class="cardsrightupper">
+                                <h4>Coorg</h4>
+                            </div>
+                            <div class="cardsrightlower">
+                                <span class="kg">Starts at</span>
+                                <span class="pricenow"><i class="fa fa-rupee"></i>7,500 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsdiv1">
+                        <button class="viewall"> View All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> -->
+    <div class="BigContainer">
+
+        <div class="bigContainerUpper">
+            <h1>Paradise On Earth</h1>
+        </div>
+        <div class="bigContainerLower">
+            <div class="paraCards">
+                <div class="paraCardsUpper">
+                    <img src="./assets/1.jpeg" alt="error loading image">
+                </div>
+                <div class="paraCardsLower">
+                    <div class="paraCardsLowerupper">
+                        <h3 style="font-style: italic;">Trending Adventures</h3>
+                    </div>
+                    <div class="paraCardsLowerlower">
+                        <div class="treks0">
+                            <span class="treks"> Winter Ladakh</span>
+                            <span class="treks"> Spiti Bike Trip</span>
+                            <span class="treks"> Kedarkantha trek</span>
+                            <span class="treks"> Ladakh Bike Trip</span>
+                            <span class="treks"> Chadar Trek</span>
+                        </div>
+                        <div class="treks1">
+                            <span class="treks">Kheerganga Trek</span>
+                            <span class="treks">Everest Base camp</span>
+                            <span class="treks">Sikkim bike trip </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paraCards">
+                <div class="paraCardsUpper">
+                    <img src="./assets/2.jpeg" alt="error loading image">
+                </div>
+                <div class="paraCardsLower">
+                    <div class="paraCardsLowerupper">
+                        <h3 style="font-style: italic;">Islan</h3>
+                    </div>
+                    <div class="paraCardsLowerlower">
+                        <div class="treks0">
+                            <span class="treks"> Winter Ladakh</span>
+                            <span class="treks"> Spiti Bike Trip</span>
+                            <span class="treks"> Kedarkantha trek</span>
+                            <span class="treks"> Ladakh Bike Trip</span>
+                        </div>
+                        <div class="treks1">
+                            <span class="treks">Kheerganga Trek</span>
+                            <span class="treks">Everest Base camp</span>
+                            <span class="treks">Sikkim bike trip </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paraCards">
+                <div class="paraCardsUpper">
+                    <img src="./assets/3.jpeg" alt="error loading image">
+                </div>
+                <div class="paraCardsLower">
+                    <div class="paraCardsLowerupper">
+                        <h3 style="font-style: italic;">Southeast Asia</h3>
+                    </div>
+                    <div class="paraCardsLowerlower">
+                        <div class="treks0">
+                            <span class="treks"> Winter Ladakh</span>
+                            <span class="treks"> Spiti Bike Trip</span>
+                            <span class="treks"> Kedarkantha trek</span>
+                            <span class="treks"> Ladakh Bike Trip</span>
+                        </div>
+                        <div class="treks1">
+                            <span class="treks">Kheerganga Trek</span>
+                            <span class="treks">Everest Base camp</span>
+                            <span class="treks">Sikkim bike trip </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="paraCards">
+                <div class="paraCardsUpper">
+                    <img src="./assets/4.jpeg" alt="error loading image">
+                </div>
+                <div class="paraCardsLower">
+                    <div class="paraCardsLowerupper">
+                        <h3 style="font-style: italic;">Southeast Asia</h3>
+                    </div>
+                    <div class="paraCardsLowerlower">
+                        <div class="treks0">
+                            <span class="treks"> Winter Ladakh</span>
+                            <span class="treks"> Spiti Bike Trip</span>
+                            <span class="treks"> Kedarkantha trek</span>
+                            <span class="treks"> Ladakh Bike Trip</span>
+                        </div>
+                        <div class="treks1">
+                            <span class="treks">Kheerganga Trek</span>
+                            <span class="treks">Everest Base camp</span>
+                            <span class="treks">Sikkim bike trip </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer2">
+        <div class="paraCards">
+            <div class="paraCardsUpper">
+                <img src="./assets/5.jpeg" alt="error loading image">
+            </div>
+            <div class="paraCardsLower">
+                <div class="paraCardsLowerupper">
+                    <h3 style="font-style: italic;">Southeast Asia</h3>
+                </div>
+                <div class="paraCardsLowerlower">
+                    <div class="treks0">
+                        <span class="treks"> Winter Ladakh</span>
+                        <span class="treks"> Spiti Bike Trip</span>
+                        <span class="treks"> Kedarkantha trek</span>
+                        <span class="treks"> Ladakh Bike Trip</span>
+                    </div>
+                    <div class="treks1">
+                        <span class="treks">Kheerganga Trek</span>
+                        <span class="treks">Everest Base camp</span>
+                        <span class="treks">Sikkim bike trip </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paraCards">
+            <div class="paraCardsUpper">
+                <img src="./assets/6.jpeg" alt="error loading image">
+            </div>
+            <div class="paraCardsLower">
+                <div class="paraCardsLowerupper">
+                    <h3 style="font-style: italic;">Southeast Asia</h3>
+                </div>
+                <div class="paraCardsLowerlower">
+                    <div class="treks0">
+                        <span class="treks"> Winter Ladakh</span>
+                        <span class="treks"> Spiti Bike Trip</span>
+                        <span class="treks"> Kedarkantha trek</span>
+                        <span class="treks"> Ladakh Bike Trip</span>
+                    </div>
+                    <div class="treks1">
+                        <span class="treks">Kheerganga Trek</span>
+                        <span class="treks">Everest Base camp</span>
+                        <span class="treks">Sikkim bike trip </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paraCards">
+            <div class="paraCardsUpper">
+                <img src="./assets/7.jpeg" alt="error loading image">
+            </div>
+            <div class="paraCardsLower">
+                <div class="paraCardsLowerupper">
+                    <h3 style="font-style: italic;">Southeast Asia</h3>
+                </div>
+                <div class="paraCardsLowerlower">
+                    <div class="treks0">
+                        <span class="treks"> Winter Ladakh</span>
+                        <span class="treks"> Spiti Bike Trip</span>
+                        <span class="treks"> Kedarkantha trek</span>
+                        <span class="treks"> Ladakh Bike Trip</span>
+                    </div>
+                    <div class="treks1">
+                        <span class="treks">Kheerganga Trek</span>
+                        <span class="treks">Everest Base camp</span>
+                        <span class="treks">Sikkim bike trip </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="paraCards">
+            <div class="paraCardsUpper">
+                <img src="./assets/8.jpeg" alt="error loading image">
+            </div>
+            <div class="paraCardsLower">
+                <div class="paraCardsLowerupper">
+                    <h3 style="font-style: italic;">Southeast Asia</h3>
+                </div>
+                <div class="paraCardsLowerlower">
+                    <div class="treks0">
+                        <span class="treks"> Winter Ladakh</span>
+                        <span class="treks"> Spiti Bike Trip</span>
+                        <span class="treks"> Kedarkantha trek</span>
+                        <span class="treks"> Ladakh Bike Trip</span>
+                    </div>
+                    <div class="treks1">
+                        <span class="treks">Kheerganga Trek</span>
+                        <span class="treks">Everest Base camp</span>
+                        <span class="treks">Sikkim bike trip </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <script src="./js/app.js"></script>
+
+
+
+    <script src="./js/index.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+.bigContainer{
+    width:81%;
+    margin-left: 128px;
+    /* border: 2px solid gray; */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upper{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    height: 20%;
+    align-items: center;
+    width: 100%;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid violet; */
+    height: 15%;
+    align-items: center;
+    width: 100%;
+    /* background-color: violet; */
+}
+.clickbuttons{
+    
+        /* margin-right: 4px; */
+        /* display: block;
+        width: 100%;
+        border: ;
+        background-color: #04AA6D;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center; */
+        margin-right: 10px;
+            font-size: xx-small;
+            border: 2px solid gray;
+            border-radius: 20px;
+            background-color: white;
+            color: gray;
+            padding: 10px 18px;
+            font-size: 13px;
+            cursor: pointer;
+          
+      }
+.clickbuttons:hover{
+    border-color: orangered;
+    border-radius: 20px;
+    color: orangered;
+  
+}
+#bangloretab{
+    margin-top: 10px;
+    margin-left: 10px;
+    height :54%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display:none; */
+    /* align-items: center; */
+}
+#punetab{
+    margin-top: 10px;
+    margin-left: 10px;
+    height :54%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display:none; */
+    /* align-items: center; */
+}
+#jaipurtab{
+    margin-top: 10px;
+    margin-left: 10px;
+    height :54%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display:none; */
+    /* align-items: center; */
+}
+#chennaitab{
+    margin-top: 10px;
+    margin-left: 10px;
+    height :54%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display:none; */
+    /* align-items: center; */
+}
+#chandighartab{
+    margin-top: 10px;
+    margin-left: 10px;
+    height :54%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display:none; */
+    /* align-items: center; */
+}
+#mumbaitab{
+    margin-top: 10px;
+    margin-left: 10px;
+    height :54%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display:none; */
+    /* align-items: center; */
+}
+#delhitab{
+    margin-top: 10px;
+    margin-left: 10px;
+    height :54%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display:none; */
+    /* align-items: center; */
+}
+.banglolower{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid yellowgreen; */
+    height:40%;
+    justify-content: space-between;
+}
+.bangloupper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid yellowgreen; */
+    height:40%; 
+    justify-content: space-between;
+}
+.cardsdiv{
+    display: flex;
+    justify-content: space-around;
+    width:22%;
+    height: 98%;
+    background-color: white; 
+    box-shadow: 0px 0px 4px whitesmoke;
+
+}
+.cardsdiv1{
+    display: flex;
+    /* justify-content: space-around; */
+    width:22%;
+    align-items: center;
+    height: 98%;
+    background-color: white; 
+   
+
+}
+.cardsdiv:hover{
+    border-radius: 10px;
+    transform: scale(1.1);
+    border: 1px solid whitesmoke;
+    
+.cardsleft img{
+    width: 100%;
+    height: 100%;
+}
+.cardsleft{
+    width: 34%;
+    height:100%;
+    background-image: url('./assets/images/lanka03.jpeg');
+            border-radius: 7px;
+            background-size: cover;
+            background-position: center;
+            /* width: 100%;  */
+            /* overflow-x: auto; */
+            background-repeat: no-repeat;
+}
+.cardsright{
+    width: 60%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardsrightlower{
+    padding: 3px 3px;
+    height:48%;
+    /* background-color: turquoise; */
+    margin-top: 4px;
+}
+.cardsrightupper{
+    padding: 3px 3px;
+    height:48%;
+    /* background-color: violet; */
+    margin-bottom:9px ;
+}
+.kg{
+    color: gray;
+}
+/* .bottun{
+    width: %;
+    height: 25%;
+    display:flex;
+    align-items: center;
+    padding: 30px 30px;
+} */
+.viewall{
+    width:60%;
+    height:40%;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: orangered;
+    border: 2px solid orangered;
+}
+.viewall:hover{
+    background-color: white;
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+

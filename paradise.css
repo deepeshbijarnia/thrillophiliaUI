@@ -1,0 +1,129 @@
+/* *{
+    box-sizing: border-box;
+} */
+.BigContainer{
+    width:1140px;
+    margin-left: 163px;
+    margin-right: 163px;
+    /* border: 2px solid gray; */
+    height: 65vh;
+    margin-top: 150px;
+}
+.bigContainerUpper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid red; */
+    position: relative;
+    bottom: 12px;
+    /* padding-bottom: 30px; */
+}
+.orilinez{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+.bigContainerLower{
+    /* margin-top: 17px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 84%;
+    /* border: 2px solid black; */
+}
+.paraCards{
+    width: 22%;
+    height: 100%;
+    /* border: 2px solid orchid; */
+
+}
+.paraCardsUpper{
+    width:100%;
+    height: 55%;
+    /* border: 2px solid palegreen; */
+}
+.paraCardsLower{
+    width:100%;
+    height: 45%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+}
+.paraCardsUpper img{
+    width: 100%;
+    height: 100%;
+}
+.treks1{
+   width: 49%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   /* border: 2px solid orchid ; */
+}
+
+.treks0{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid orangered; */
+}
+.treks{
+    font-family: sans-serif;
+    color: gray;
+    font-size: medium  ;
+    font-weight: 100;
+}
+.paraCardsLowerupper{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 15%;
+    /* border: 2px solid darkblue; */
+    margin-top: 2px;
+}
+.paramidori{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: flex-start;
+}
+.paramid{
+    width: 18%;
+    height: 14%;
+    background-color: orangered;
+}
+.paraCardsLowerlower{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid hotpink; */
+    margin-bottom: 4px;
+}
+.treks:hover{
+    color: orangered;
+}
+.BigContainer2{
+    height: 58.8vh;
+    width:1140px;
+    margin-left: 163px;
+    margin-right: 163px;
+    /* border: 2px solid gray; */
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+.classy{
+    width: 11%;
+    height: 11%;
+    background-color: orangered;
+}

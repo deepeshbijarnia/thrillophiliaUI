@@ -1,0 +1,215 @@
+.outtabbbdiv{
+    margin-top: 140px;
+    width: 1405px;
+    height: 78vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+    background-color: #404040;
+    position: absolute;
+    z-index: 1;
+}
+.outtabbbdivlower{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    bottom: 0px;
+    /* border: 2px solid white; */
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 5px;
+}
+.bbdiv{
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 78%;
+    margin-left: 163px;
+    margin-right: 163px;
+    /* border: 2px solid blue; */
+    height: 71vh;
+    background-color: #404040;
+    position: relative;
+
+}
+.bbdiv1{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 3px;
+    right: 27px;
+    padding: 1px 30px;
+}
+.bbdiv2{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.bbdiv21{
+    width: 35%;
+    height: 1.8%;
+    background-color: grey;
+}
+.bbdiv22{
+    width: 18%;
+    height: 70%;
+    
+}
+.bbdiv22 img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0);
+    
+}
+
+.bbdiv3{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+/* .bbbdiv{
+    width: 900px;
+    height: 65vh;
+    background-color:  orangered;
+} */
+
+.innerbbdiv1{
+    display: flex ;
+    width: 94%;
+    height: 86%;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    
+
+}
+.innerbbdiv11{
+    display: flex ;
+    flex-direction: column;
+    width: 22%;
+    height: 100%;
+   
+ /* border: 2px solid black; */
+}
+.innerbbdiv111:hover{
+    color: orangered;
+    font-weight: 700;
+}
+.graydiv{
+    height: 100% ;
+    width: 0.2%;
+    background-color: gray ;
+}
+.innerbbdiv12{
+    display: flex ;
+    flex-direction: column;
+    width: 22%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+.innerbbdiv13{
+    display: flex ;
+    flex-direction: column;
+    width: 22%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+.innerbbdiv14{
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+.innerbbdiv111{
+    font-family: sans-serif,serif;
+    font-size: x-small;
+    letter-spacing: normal;
+    color: gray;
+    height: 5%;
+    width: 100%;
+    /* border: 2px solid hotpink; */
+    margin-top: 8px;
+}
+.innerbbdiv14box{
+    height: 26%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid greenyellow; */
+    
+}
+.innerbbdiv14cards{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blueviolet; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    position: absolute;
+    z-index: 1;
+}
+.innerbbdiv14cards:hover{
+    transform: scale(1.2);
+}
+.parent14{
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destcity{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+.bbdiv3buttons button{
+    border-radius: 50%;
+    padding: 12px 18px;
+    border: grey;
+    margin-right: 20px;
+}
+.outtabbbdivlower1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    color: #B0B0B0;
+    font-size: large;
+    font-weight: bolder;
+
+}
+.outtabbbdivlower2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    color: #B0B0B0;
+    font-size: medium;
+    
+}
